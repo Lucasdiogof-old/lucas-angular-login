@@ -22,16 +22,13 @@ export class AppComponent {
   public socialSignIn(socialPlatform: string) {
 
     let socialPlatformProvider;
-    if (socialPlatform == "facebook") {
-      socialPlatformProvider = FacebookLoginProvider.PROVIDER_ID;
-    } else if (socialPlatform == "google") {
+    if (socialPlatform == "google") {
       socialPlatformProvider = GoogleLoginProvider.PROVIDER_ID;
     }
-
+    //Método pra logar com o email e senha da google
     this.socialAuthService.signIn(socialPlatformProvider).then(
       (userData) => {
         console.log(socialPlatform + " sign in data : ", userData);
-        // Now sign-in with userData        
         if (userData != null) {
           this.authorized = true;
           this.user = userData;
@@ -39,7 +36,7 @@ export class AppComponent {
       }
     );
   }
-
+  //Método pra deslogar
   public signOut() {
     this.socialAuthService.signOut();
     this.authorized = false;

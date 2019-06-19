@@ -2,17 +2,18 @@
 	<div id="app" class="flex justify-center pt-8 ">
 		<div class="max-w-xs border rounded-sm p-6 w-full border-green border-t-4">
 			<div class="w-full text-center">
-				<h3 class='text-grey-darkest'> Login </h3>
+				<h3 class="text-grey-darkest"> Login </h3>
 			</div>
-			<div class="mb-2">
+			<div class="mb-2 my-left-text">
 				<p class="pb-2 pt-4 text-sm text-grey-darkest"> Endereço de email:</p>
 				<input type="email" placeholder="Digite seu email" class="border-2 p-2 w-full rounded-sm"> 
     <p class="pb-2 pt-4 text-sm text-grey-darkest" > Senha:</p>
   <input type="password" placeholder="Digite sua senha" class="border-2 p-2 w-full rounded-sm"> 
 	</div>
-  <div class="flex justify-between mt-4 w-full ">
-  <button (click)="socialSignIn('google')" class="p-2 bg-green text-black rounded-sm">Entrar</button>  
+  <div class="flex justify-between mt-4 w-full">
+  <button (click)="socialSignIn('google')" class="p-2 bg-green text-black rounded-sm button">Entrar com Google</button>  
   </div>
+  				<p class="pb-2 pt-4 text-sm text-grey-darkest"> Desenvolvido por Lucas Diogo</p>
 </div>
 </div>
      </ng-template>
@@ -29,7 +30,7 @@
   <h4>Nome: {{user.name}}</h4>
   <p>Email: {{user.email}}</p>
 </div> 
-<button class="btn btn-danger" (click)="signOut()">Sair</button>
+<button class="btn btn-red" (click)="signOut()">Sair</button>
  </ng-template>
  </div>
 </section>

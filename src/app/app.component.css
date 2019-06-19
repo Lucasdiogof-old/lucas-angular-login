@@ -1,4 +1,16 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
 body{font-family: arial}
 .jumbotron{width:450px; margin:0 auto; padding:2rem;}
 .marginBottom { margin-bottom: .75rem;}
+p {
+  font-family: Lato;
+}
+
+.button {
+margin:auto;
+  display:block;
+}
+
+.my-left-text {
+    text-align: left;
+    width: 100%;
+}
