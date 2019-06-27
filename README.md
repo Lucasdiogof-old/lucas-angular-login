@@ -1,3 +1,3 @@
 # lucas-angular-login
 
-Para acessar o servidor da aplicação, acessar o site: https://lucas-angular-login.stackblitz.io
+Para acessar o servidor da aplicação, entre no site: https://lucas-angular-login.stackblitz.io
